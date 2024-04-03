@@ -2,7 +2,7 @@
  * @Author: zhanghongzhi
  * @Date: 2024-04-02 18:34:57
  * @LastEditors: zhanghongzhi
- * @LastEditTime: 2024-04-02 19:30:38
+ * @LastEditTime: 2024-04-02 19:39:16
  * @FilePath: /xlog/README.md
  * @Description: 
  * 
@@ -23,3 +23,8 @@
 4. 如需在调试时将日志打印到控制台终端，可在编译时定义NOLOG宏，LOG_INFO等将被解释为printf，此时只需引用xlog.h头文件即可，不需要链接该库。在发布正式版本时，只需在编译文件中删除NOLOG宏，同时链接该库即可，不需要修改业务代码
 
 ## How to compile
+git clone --recursive git@github.com:AC-DISL/xlog.git
+cd xlog
+mkdir build
+cd build
+cmake ..
