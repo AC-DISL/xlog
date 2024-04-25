@@ -9,7 +9,7 @@ link_libraries(
     pthread
 )
 
-add_library(xlog SHARED src/xlog.cpp)
+add_library(xlog SHARED src/xlog.cc)
 
 
 add_executable(xlogTest test/test.cc)
