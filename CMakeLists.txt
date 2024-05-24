@@ -14,3 +14,7 @@ add_library(xlog SHARED src/xlog.cc)
 
 add_executable(xlogTest test/test.cc)
 target_link_libraries(xlogTest xlog)
+
+add_executable(nolog test/nolog.cc)
+target_compile_definitions(nolog PRIVATE NO_LOG)
+target_link_libraries(xlogTest xlog)
